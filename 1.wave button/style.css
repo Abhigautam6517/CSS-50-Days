@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+}
+
+.container {
+    background: #f3f2ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Jost", sans-serif;
+    background-color: #272727;
+}
+a{
+    transition: transform 1.5s;
+    z-index: 1;
+    position: relative;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #00aeff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid #00aeff;
+    overflow: hidden;
+}
+.text{
+    position: relative;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: calc(100%+100px);
+    left: 0;
+    /* background-color: #00aeff; */
+
+}
+.wave::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-size: 100px 100px;
+    background-position: center;
+    background-image: url('./wave.png');
+    top: -80px;
+    animation: wavy 0.5s linear infinite;
+    transition: all 2s;
+    z-index: 0;
+}
+a:hover{
+    transform: scale(1.5);
+    color: white;
+    font-weight: 800;
+}
+@keyframes wavy {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 122px;
+    }
+    
+}
