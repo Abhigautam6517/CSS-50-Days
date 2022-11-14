@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(253, 251, 251);
+
+}
+ul{
+    display: flex;
+    list-style: none;
+    border-bottom: 15px solid royalblue;
+
+}
+ul li{
+    width: 40px;
+    height: 40px;
+   background-color: royalblue;
+   margin: auto 22px;
+   border-radius: 50%;
+   animation: ball 1s linear infinite alternate-reverse;
+}
+@keyframes ball {
+    0%{
+        transform: translateY(0);;
+    }
+    50%{
+        transform: translateY(-150px);;
+    }
+    100%{
+        transform: translateY(0);;
+    }
+    
+}
+ul li:nth-child(2){
+    animation-delay: 0.2s;
+}
+ul li:nth-child(3){
+    animation-delay: 0.4s;
+}
+ul li:nth-child(4){
+    animation-delay: 0.6s;
+}
+ul li:nth-child(5){
+    animation-delay: 0.8s;
+}
