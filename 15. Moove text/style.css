@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 35px;
+    color: #fff;
+    
+}
+h1{
+    /* width: 100%; */
+    color: black;
+    animation: move 1s linear  infinite alternate;
+
+}
+@keyframes move {
+    0%{
+        transform: translateX(0px);
+        transform: scaleX(2.2);
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: translateX(900px);
+
+    }
+    
+}
