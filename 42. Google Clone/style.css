@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* width: 100%; */
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(29, 28, 28);
+}
+.google{
+    position: relative;
+    width: 100%;
+
+}
+.google h2{
+    color: white;
+    font-size: 127px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 22px;
+
+}
+.search{
+   position: relative;
+ 
+
+}
+input{
+    position: absolute;
+    top: 0;
+    left: 24%;
+    width: 50%;
+    height: 50px;
+    border-radius: 22px;
+    border: 1px solid #fff;
+    background-color: rgb(29, 28, 28);;
+}
+
+.icons{
+    width: 100%;
+    height: 50px;
+    
+}
+.last-icon{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    color: #fff;
+   font-size: 20px;
+}
+.last-icon1{
+    position: absolute;
+    top: 30%;
+    left: 68%;
+    color: #fff;
+   font-size: 20px;
+}
+.last-icon2{
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    color: #fff;
+   font-size: 20px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+  gap: 42px;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 22px;
+    border-radius: 7px;
+    background-color: rgb(44, 42, 42);
+}
+.other{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+
+}
