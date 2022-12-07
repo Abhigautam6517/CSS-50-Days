@@ -1,0 +1,104 @@
+:root {
+    --background_color: #cccccc;
+    --egg: #c18962;
+    --eggShade: #d2a787;
+    --shade3: #7c5239;
+    --white: #f5f0ee;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: var(--background_color);
+}
+
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.egg {
+    top: 30%;
+    left: 40%;
+    position: absolute;
+    width: 150px;
+    height: 180px;
+    background: linear-gradient(to bottom, var(--eggShade), var(--egg), var(--shade3));
+    border-radius: 50% 70%;
+    animation: shake 3s linear infinite;
+}
+
+#eyeLeft, #eyeRight {
+    position: absolute;
+    display: block;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    transform: rotate(345deg);
+    left: 20%;
+    top: 40%;
+    border: solid 1.5px black;
+    animation: eyeMove 3s linear infinite;
+}
+
+#eyeRight {
+    left: 55%;
+    top: 31%;
+}
+
+#mouth {
+    position: absolute;
+    background: black;
+    height: 0.5em;
+    top: 65%;
+    left: 47%;
+    transform: rotate(343deg);
+    border-radius: 20% 20% 50% 50%;
+    animation: lipsMove 3s linear infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-50deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes eyeMove {
+    0% {
+        background: radial-gradient(at 35% 40%, black 35%, brown 35% 42%, white 40%);
+    }
+    
+    50% {
+        background: radial-gradient(at 35% 60%, black 35%, brown 35% 42%, white 40%);
+    }
+    
+    100% {
+        background: radial-gradient(at 35% 40%, black 35%, brown 35% 42%, white 40%);
+    }
+}
+
+@keyframes lipsMove {
+    0% {
+        width: 1.6em;
+    }
+
+    50% {
+        width: 0.9em;
+        height: 1.3em;
+    }
+
+    100% {
+        width: 1.6em;
+    }
+}
