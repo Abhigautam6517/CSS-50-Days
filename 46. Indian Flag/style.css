@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(
+      to right,
+      rgba(255, 154, 48, 255),
+      white 50%,
+      rgba(11, 137, 1, 255)
+    );
+  }
+  
+  .container {
+    display: flex;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 30%;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    font-family: Cambria;
+    font-size: 40px;
+  }
+  
+  .stick {
+    width: 10px;
+    height: 250px;
+    background: linear-gradient(to right, chocolate, black);
+  }
+  
+  .saffron {
+    width: 250px;
+    height: 35px;
+    background: rgba(255, 154, 48, 255);
+  }
+  .white {
+    width: 250px;
+    height: 35px;
+    background: white;
+    position: relative;
+    transform: translateX(-100%) translateY(100%);
+  }
+  .green {
+    width: 250px;
+    height: 35px;
+    background: rgba(11, 137, 1, 255);
+    position: relative;
+    transform: translateX(-200%) translateY(200%);
+  }
+  
+  .chakra {
+    position: absolute;
+    transform: translateY(60%) translateX(-800%);
+  }
+  
+  h3 {
+    transform: translateY(200%) translateX(40%);
+    font-family: cursive;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(32, 1, 102);
+  }
+  
